@@ -2,33 +2,76 @@
 
 @media screen and (min-width: 768px) {
     #topbar {
-        display: inline;
+        display: inline;    /*The logo in the header is aligned to the left*/
         font-size: large;
     }
 
     main {
-        padding: 40px;
+        padding: 40px;    /*The padding of the main page content increases*/
     }
 
-    .recipe-origin {
-        display: inline;
+    .recipe-origin {        /*The text ‘(Dolce Tradizionale)’ appears*/
+        display: inline;    
         color: #4e3969;
         font-weight: 800;
     }
-
+    
+    h2{
+        font-size: 30px;    /*La grandezza del titolo diventa più grande*/
+    }
+    
     ul {
-        display: flex;
+        display: flex;      /*The recipe information below the video is displayed in a grid layout*/
         flex-wrap: wrap;
         max-width: 768px;
     }
 
-    .btn, .ads {
+    .btn, .ads {            /*The social buttons expand*/   /*The advertising banner appears*/
         display: inline;
         width: 100px;
         margin-bottom: 15px;
     }
 
-    img {
+    img {                   /*The image in the recipe description is wrapped by the text*/
         float: left;
+        padding-right: 10px;
+        margin-bottom: 20px;
     }
+}
+
+@media screen and (min-width: 992px) {
+    h2 {
+        font-size: 45px;    /*The recipe title size increases even more*/
+    }
+    
+    ul {
+        display:block;      /*The recipe information is displayed one below the other again*/
+    }
+    
+    .recipe-card {        /*The video and the other recipe information are displayed side by side*/
+        display: flex;
+
+        .recipe-video {
+            flex-grow: 1;
+        }
+    }
+    
+    .social-networks .label{    /*The names of the social platforms appear*/
+    display: inline;
+    }
+
+    .btn{
+        box-sizing: content-box;
+        padding: 5px 50px;
+    }
+    
+    footer{                     /*In the footer, the site information and the navigation menu are displayed on the same line but on opposite sides*/
+        display: flex;
+        justify-content: space-between;
+        
+        address{
+            text-align: start;
+        }
+    }
+    
 }
