@@ -7,17 +7,17 @@
     }
 
     main {
-        padding: 40px;    /*The padding of the main page content increases*/
+        padding: 40px;     /*The padding of the main page content increases*/
     }
 
-    .recipe-origin {        /*The text ‘(Dolce Tradizionale)’ appears*/
+    .recipe-origin {       /*The text ‘(Dolce Tradizionale)’ appears*/
         display: inline;    
         color: #4e3969;
         font-weight: 800;
     }
     
     h2{
-        font-size: 30px;    /*La grandezza del titolo diventa più grande*/
+        font-size: 30px;    /*The title size becomes larger*/
     }
     
     ul {
@@ -32,7 +32,7 @@
         margin-bottom: 15px;
     }
 
-    img {                   /*The image in the recipe description is wrapped by the text*/
+    img {                  /*The image in the recipe description is wrapped by the text*/
         float: left;
         padding-right: 10px;
         margin-bottom: 20px;
@@ -48,7 +48,7 @@
         display:block;      /*The recipe information is displayed one below the other again*/
     }
     
-    .recipe-card {        /*The video and the other recipe information are displayed side by side*/
+    .recipe-card {       /*The video and the other recipe information are displayed side by side*/
         display: flex;
 
         .recipe-video {
@@ -65,7 +65,7 @@
         padding: 5px 50px;
     }
     
-    footer{                     /*In the footer, the site information and the navigation menu are displayed on the same line but on opposite sides*/
+    footer{               /*In the footer, the site information and the navigation menu are displayed on the same line but on opposite sides*/
         display: flex;
         justify-content: space-between;
         
@@ -74,4 +74,19 @@
         }
     }
     
+}
+
+/*Bonus*/
+
+@media screen and (min-width: 576px) {    /*The image in the recipe description is wrapped by the text even on mobile, but only if there is enough space*/
+    img {                   
+        float: left;
+        padding-right: 10px;
+        margin-bottom: 20px;
+    }
+
+    .btn{
+        box-sizing: content-box;    /*The social buttons already expand on larger mobile devices (576px)*/
+        padding: 5px 50px;
+    }
 }
