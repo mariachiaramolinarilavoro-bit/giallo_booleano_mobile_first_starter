@@ -23,16 +23,15 @@
     ul {
         display: flex;      /*The recipe information below the video is displayed in a grid layout*/
         flex-wrap: wrap;
-        max-width: 768px;
+        gap: 2rem;
     }
 
     .btn, .ads {            /*The social buttons expand*/   /*The advertising banner appears*/
-        display: inline;
-        width: 100px;
+        display: block;
         margin-bottom: 15px;
     }
 
-    img {                  /*The image in the recipe description is wrapped by the text*/
+    .presentation img {                  /*The image in the recipe description is wrapped by the text*/
         float: left;
         padding-right: 10px;
         margin-bottom: 20px;
@@ -87,6 +86,6 @@
 
     .btn{
         box-sizing: content-box;    /*The social buttons already expand on larger mobile devices (576px)*/
-        padding: 5px 50px;
+        padding: 5px 25px;
     }
 }
